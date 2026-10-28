@@ -234,7 +234,7 @@
   const copyStatus = document.querySelector("[data-copy-status]");
 
   if (copyBtn) {
-    const email = copyBtn.dataset.email || "hello@chenyu.design";
+    const email = copyBtn.dataset.email || "hello@wuyu.design";
     const label = copyBtn.querySelector("[data-copy-label]");
     const defaultLabel = label ? label.textContent : "复制邮箱";
     let resetTimer = null;
