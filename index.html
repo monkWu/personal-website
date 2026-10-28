@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>陈屿 — 产品设计师 &amp; 前端开发</title>
+  <meta name="description" content="陈屿，常驻上海的产品设计师与前端开发者。做产品、品牌与界面，把复杂的事情做得简单而好看。">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="author" content="陈屿">
+  <meta property="og:title" content="陈屿 — 产品设计师 &amp; 前端开发">
+  <meta property="og:description" content="把复杂的事，做得简单而好看。上海产品设计师与前端开发者的个人作品集。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="陈屿">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('cy-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="陈屿，回到首页">
+        <span class="brand-mark" aria-hidden="true">屿</span>
+        <span class="brand-name">陈屿<span class="brand-en">Chen Yu</span></span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a href="#about"><span aria-hidden="true">01</span>关于</a>
+        <a href="#work"><span aria-hidden="true">02</span>作品</a>
+        <a href="#capabilities"><span aria-hidden="true">03</span>能力</a>
+        <a href="#notes"><span aria-hidden="true">04</span>笔记</a>
+        <a href="#contact"><span aria-hidden="true">05</span>联系</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="3.6" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M10 1.6v2M10 16.4v2M1.6 10h2M16.4 10h2M4.1 4.1l1.4 1.4M14.5 14.5l1.4 1.4M15.9 4.1l-1.4 1.4M5.5 14.5l-1.4 1.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M16.2 12.3A6.9 6.9 0 0 1 7.7 3.8a6.9 6.9 0 1 0 8.5 8.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="移动端导航">
+      <a href="#about"><span aria-hidden="true">01</span>关于</a>
+      <a href="#work"><span aria-hidden="true">02</span>作品</a>
+      <a href="#capabilities"><span aria-hidden="true">03</span>能力</a>
+      <a href="#notes"><span aria-hidden="true">04</span>笔记</a>
+      <a href="#contact"><span aria-hidden="true">05</span>联系</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a href="mailto:hello@chenyu.design">hello@chenyu.design</a>
+      <p>上海 · 31.23°N — 121.47°E</p>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+    <section class="hero shell" id="hero" aria-labelledby="hero-title">
+      <div class="hero-top" data-reveal>
+        <p class="hero-status"><span class="dot" aria-hidden="true"></span>现开放新项目合作</p>
+        <p class="hero-loc">上海 · 31.23°N — 121.47°E</p>
+      </div>
+
+      <div class="hero-grid">
+        <h1 class="hero-title" id="hero-title">
+          <span class="line" data-reveal style="--d:60ms">把复杂的事，</span>
+          <span class="line" data-reveal style="--d:140ms">做得<em>简单</em>而好看。</span>
+        </h1>
+
+        <div class="hero-aside" data-reveal style="--d:220ms">
+          <p>我是陈屿，产品设计师与前端开发者。<span class="nowrap">过去六年</span>，我在产品、品牌与代码之间来回，帮团队把模糊的想法，变成可以触摸的体验。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#work">
+              查看作品
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 12L12 4M5.2 4H12v6.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="link-quiet" href="#contact">写封邮件</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <p class="hero-role">产品设计 <span>/</span> 前端开发 <span>/</span> 品牌系统</p>
+        <a class="scroll-cue" href="#about">
+          继续向下
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 2v10M3 8l4 4 4-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p class="hero-index">Portfolio — 2026</p>
+      </div>
+
+      <svg class="hero-asterisk" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+        <g stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M60 5v110M5 60h110M21.2 21.2l77.6 77.6M98.8 21.2L21.2 98.8"/>
+        </g>
+      </svg>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>产品设计</span><i>✳</i><span>交互体验</span><i>✳</i><span>品牌系统</span><i>✳</i><span>前端实现</span><i>✳</i><span>设计系统</span><i>✳</i><span>视觉叙事</span><i>✳</i>
+        </div>
+        <div class="marquee-group">
+          <span>产品设计</span><i>✳</i><span>交互体验</span><i>✳</i><span>品牌系统</span><i>✳</i><span>前端实现</span><i>✳</i><span>设计系统</span><i>✳</i><span>视觉叙事</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section shell" id="about" aria-labelledby="about-title">
+      <header class="section-head" data-reveal>
+        <span class="section-no">01</span>
+        <h2 class="section-title" id="about-title">关于</h2>
+        <span class="section-sub">About</span>
+      </header>
+
+      <div class="about-grid">
+        <figure class="portrait" data-reveal>
+          <div class="portrait-art" role="img" aria-label="抽象海报：米色纸面上的一轮赭红圆日、地平线与一个「屿」字">
+            <span class="pa-meta">CY — Studio<br>Shanghai, CN</span>
+            <span class="pa-sun"></span>
+            <span class="pa-line"></span>
+            <span class="pa-arc"></span>
+            <span class="pa-word">屿</span>
+            <span class="pa-caption">Portrait — 2026</span>
+          </div>
+          <figcaption><span>在上海的第七年</span><span>N 31°13′ / E 121°28′</span></figcaption>
+        </figure>
+
+        <div class="about-copy">
+          <p class="lead" data-reveal>好的设计不是加更多，而是拿掉一切<span class="nowrap">不必要的</span>，让剩下的那件事变得清楚。</p>
+          <div class="about-text" data-reveal style="--d:80ms">
+            <p>我在上海工作，是一名产品设计师，也写前端。我的日常在 Figma 与编辑器之间切换：<span class="nowrap">画流程</span>、推敲字距，也把设计稿写成会呼吸的界面。</p>
+            <p>我参与过从 0 到 1 的产品，也接手过十万人每天使用的系统。比起风格，我更关心结构——信息如何被理解，动作如何被完成，以及一个产品如何诚实地对待它的用户。</p>
+            <p>工作之外，我拍照、走路、煮咖啡，收集城市里安静的角落。</p>
+          </div>
+          <dl class="facts" data-reveal style="--d:160ms">
+            <div><dt>现居</dt><dd>上海 · 徐汇</dd></div>
+            <div><dt>身份</dt><dd>产品设计师 &amp; 前端开发</dd></div>
+            <div><dt>经验</dt><dd>6 年 · 30+ 项目</dd></div>
+            <div><dt>邮箱</dt><dd><a href="mailto:hello@chenyu.design">hello@chenyu.design</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <header class="section-head" data-reveal>
+          <span class="section-no">02</span>
+          <h2 class="section-title" id="work-title">作品</h2>
+          <span class="section-sub">Selected Work</span>
+        </header>
+
+        <ul class="work-list" data-work-list>
+          <li class="work-item" data-title="澄野" data-index="01" data-c1="#2e3828" data-c2="#8b9768">
+            <a class="work-link" href="#contact" aria-label="澄野，植物生活品牌，2024 年项目，来信了解详情">
+              <span class="work-no">01</span>
+              <span class="work-main">
+                <span class="work-title">澄野</span>
+                <span class="work-sub">植物生活品牌 · 从一株植物开始</span>
+              </span>
+              <span class="work-tags">品牌识别<br>电商体验</span>
+              <span class="work-year">2024</span>
+              <span class="work-arrow">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M5 15L15 5M6.5 5H15v8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="work-item" data-title="Fold" data-index="02" data-c1="#1e2733" data-c2="#7e94a8">
+            <a class="work-link" href="#contact" aria-label="Fold 折叠笔记，产品设计项目，2024 年，来信了解详情">
+              <span class="work-no">02</span>
+              <span class="work-main">
+                <span class="work-title">Fold<em>折叠笔记</em></span>
+                <span class="work-sub">一款用空间隐喻组织想法的笔记应用</span>
+              </span>
+              <span class="work-tags">产品设计<br>设计系统</span>
+              <span class="work-year">2024</span>
+              <span class="work-arrow">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M5 15L15 5M6.5 5H15v8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="work-item" data-title="Northwind" data-index="03" data-c1="#3a2a20" data-c2="#b8734e">
+            <a class="work-link" href="#contact" aria-label="Northwind 数据决策平台，体验重构项目，2023 年，来信了解详情">
+              <span class="work-no">03</span>
+              <span class="work-main">
+                <span class="work-title">Northwind<em>数据平台</em></span>
+                <span class="work-sub">把十二个后台系统，收拢成一张决策桌面</span>
+              </span>
+              <span class="work-tags">体验重构<br>前端实现</span>
+              <span class="work-year">2023</span>
+              <span class="work-arrow">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M5 15L15 5M6.5 5H15v8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="work-item" data-title="城市漫步" data-index="04" data-c1="#252525" data-c2="#c2482c">
+            <a class="work-link" href="#contact" aria-label="城市漫步，声音地图交互实验，2022 年个人项目，来信了解详情">
+              <span class="work-no">04</span>
+              <span class="work-main">
+                <span class="work-title">城市漫步</span>
+                <span class="work-sub">用声音与地图，记录一次没有目的的散步</span>
+              </span>
+              <span class="work-tags">交互实验<br>个人项目</span>
+              <span class="work-year">2022</span>
+              <span class="work-arrow">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M5 15L15 5M6.5 5H15v8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="work-note" data-reveal>
+          <span>更多案例与完整过程，欢迎来信索取。</span>
+          <a href="#contact">聊聊你的项目 <span aria-hidden="true">↗</span></a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section shell" id="capabilities" aria-labelledby="capabilities-title">
+      <header class="section-head" data-reveal>
+        <span class="section-no">03</span>
+        <h2 class="section-title" id="capabilities-title">能力</h2>
+        <span class="section-sub">Capabilities</span>
+      </header>
+
+      <div class="cap-grid">
+        <article class="cap" data-reveal>
+          <span class="cap-no">01</span>
+          <h3>产品设计</h3>
+          <p>从问题定义到界面落地，把模糊需求变成可验证的路径。</p>
+          <ul>
+            <li>体验策略</li>
+            <li>交互设计与原型</li>
+            <li>可用性测试</li>
+            <li>设计系统</li>
+          </ul>
+        </article>
+        <article class="cap" data-reveal style="--d:80ms">
+          <span class="cap-no">02</span>
+          <h3>视觉与品牌</h3>
+          <p>让产品被认出、被记住。克制，但有自己的语气。</p>
+          <ul>
+            <li>品牌识别</li>
+            <li>视觉语言</li>
+            <li>动态与插画</li>
+            <li>数字出版物</li>
+          </ul>
+        </article>
+        <article class="cap" data-reveal style="--d:160ms">
+          <span class="cap-no">03</span>
+          <h3>前端实现</h3>
+          <p>把设计稿写成真实可用的界面，关注细节、动效与性能。</p>
+          <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>React &amp; TypeScript</li>
+            <li>动效与无障碍</li>
+            <li>性能优化</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="tools" data-reveal>
+        <span>常用工具</span>
+        Figma · Framer · React · TypeScript · GSAP · Blender · 一台胶片机
+      </p>
+    </section>
+
+    <section class="section shell" id="notes" aria-labelledby="notes-title">
+      <header class="section-head" data-reveal>
+        <span class="section-no">04</span>
+        <h2 class="section-title" id="notes-title">笔记</h2>
+        <span class="section-sub">Notes</span>
+      </header>
+
+      <div class="notes" data-reveal>
+        <details class="note">
+          <summary>
+            <span class="note-date">2025.08</span>
+            <span class="note-title">留白是一种结构，而不是空白</span>
+            <span class="note-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="note-body">
+            <p>留白不是把内容变少，而是安排注意力。页面上的每一段空白，都在告诉读者：这里可以停一下。真正难的不是加什么，而是决定什么可以不说。</p>
+          </div>
+        </details>
+        <details class="note">
+          <summary>
+            <span class="note-date">2025.05</span>
+            <span class="note-title">设计系统不是组件库，而是一种共识</span>
+            <span class="note-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="note-body">
+            <p>组件库解决「长什么样」，设计系统解决「为什么这样」。如果团队没有对齐取舍的原则，再完整的组件库也只是另一份需要维护的文档。</p>
+          </div>
+        </details>
+        <details class="note">
+          <summary>
+            <span class="note-date">2024.11</span>
+            <span class="note-title">我做产品走查时的十个问题</span>
+            <span class="note-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="note-body">
+            <p>从「用户此刻最想完成什么」开始，到「出错时他能不能自己回来」结束。走查不是找茬，而是替第一次使用的人，重新走一遍路。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-orbit" aria-hidden="true"></div>
+      <div class="shell">
+        <header class="section-head section-head--dark" data-reveal>
+          <span class="section-no">05</span>
+          <h2 class="section-title" id="contact-title">联系</h2>
+          <span class="section-sub">Get in Touch</span>
+        </header>
+
+        <div class="contact-body">
+          <p class="contact-kicker" data-reveal>有一个想法，或只是想聊聊？</p>
+          <p class="contact-title" data-reveal style="--d:60ms">我们一起，<br>把它<em>做出来</em>。</p>
+
+          <div class="contact-actions" data-reveal style="--d:120ms">
+            <a class="contact-email" href="mailto:hello@chenyu.design">
+              hello@chenyu.design
+              <svg viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M4 14L14 4M5.5 4H14v8.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <button class="copy-btn" type="button" data-copy-email data-email="hello@chenyu.design">
+              <span data-copy-label>复制邮箱</span>
+            </button>
+            <span class="sr-only" role="status" aria-live="polite" data-copy-status></span>
+          </div>
+
+          <ul class="socials" data-reveal style="--d:180ms" aria-label="社交媒体">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://web.okjike.com/" target="_blank" rel="noopener noreferrer">即刻 <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.xiaohongshu.com/" target="_blank" rel="noopener noreferrer">小红书 <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+
+        <div class="contact-foot">
+          <p><span class="dot" aria-hidden="true"></span>接受 2026 年 Q1 的项目委托</p>
+          <p>上海时间 <span data-clock>--:--</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span data-year>2026</span> 陈屿 — 保留所有权利</p>
+      <p class="footer-mid">Designed &amp; built with care in Shanghai</p>
+      <a class="to-top" href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <div class="project-preview" data-project-preview aria-hidden="true">
+    <div class="project-preview-card">
+      <span class="pp-index">01</span>
+      <span class="pp-title">澄野</span>
+      <span class="pp-meta">Selected Work</span>
+    </div>
+  </div>
+
+  <script src="assets/main.js" onerror="document.documentElement.classList.remove('js')"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "陈屿",
+      "alternateName": "Chen Yu",
+      "jobTitle": "产品设计师 & 前端开发",
+      "email": "mailto:hello@chenyu.design",
+      "address": { "@type": "PostalAddress", "addressLocality": "上海", "addressCountry": "CN" }
+    }
+  </script>
+</body>
+</html>
